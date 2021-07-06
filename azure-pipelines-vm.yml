@@ -14,7 +14,7 @@ stages:
     steps:
     
     - task: TerraformInstaller@0
-      displayName: Install TF 0.14.8
+      displayName: Install TF 1.0.1
       inputs:
         terraformVersion: '1.0.1'
 
@@ -94,7 +94,7 @@ stages:
         TargetFolder: '$(System.DefaultWorkingDirectory)/02_vm_linux'
  
     - task: TerraformInstaller@0
-      displayName: Install TF 0.14.8
+      displayName: Install TF 1.0.1
       inputs:
         terraformVersion: '1.0.1'
 
