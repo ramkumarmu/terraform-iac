@@ -28,7 +28,7 @@ stages:
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
         backendAzureRmStorageAccountName: 'terraformstatefab056'
         backendAzureRmContainerName: 'tstate-vm'
-        backendAzureRmKey: 'terraform.state'
+        backendAzureRmKey: 'terraform.tfstate'
     
     - task: TerraformTaskV1@0
       displayName: $ terraform plan
@@ -108,7 +108,7 @@ stages:
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
         backendAzureRmStorageAccountName: 'terraformstatefab056'
         backendAzureRmContainerName: 'tstate-vm'
-        backendAzureRmKey: 'terraform.state'
+        backendAzureRmKey: 'terraform.tfstate'
 
     - task: TerraformTaskV1@0
       displayName: $ terraform apply
