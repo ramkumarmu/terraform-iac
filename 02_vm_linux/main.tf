@@ -3,6 +3,7 @@ provider "azurerm" {
   features {}
 }
 
+
 # Create a resource group if it doesn't exist
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
@@ -165,4 +166,3 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
     environment = "production"
   }
 }
-
