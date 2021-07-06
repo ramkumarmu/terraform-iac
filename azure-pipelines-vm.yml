@@ -123,5 +123,5 @@ stages:
       displayName: Upload artifacts
       inputs:
         PathtoPublish: '$(System.DefaultWorkingDirectory)/02_vm_linux/'
-        ArtifactName: 'drop'
+        ArtifactName: 'dropa'
         publishLocation: 'Container'
