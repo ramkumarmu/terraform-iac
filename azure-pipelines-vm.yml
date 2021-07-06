@@ -16,7 +16,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install TF 0.14.8
       inputs:
-        terraformVersion: '0.14.8'
+        terraformVersion: '1.0.1'
 
     - task: TerraformTaskV1@0
       displayName: $ terraform init
@@ -96,7 +96,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install TF 0.14.8
       inputs:
-        terraformVersion: '0.14.8'
+        terraformVersion: '1.0.1'
 
     - task: TerraformTaskV1@0
       displayName: $ terraform init
