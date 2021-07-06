@@ -118,3 +118,10 @@ stages:
         workingDirectory: '$(System.DefaultWorkingDirectory)/02_vm_linux'
         commandOptions: 'tfplan'
         environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
+      
+    - task: PublishBuildArtifacts@1
+      displayName: Upload private key
+      inputs:
+        PathtoPublish: '$(System.DefaultWorkingDirectory)/02_vm_linux/*.pk'
+        ArtifactName: 'pk.pem'
+        publishLocation: 'Container'
