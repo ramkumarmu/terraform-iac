@@ -27,7 +27,7 @@ stages:
         backendServiceArm: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
         backendAzureRmStorageAccountName: 'terraformstatefab056'
-        backendAzureRmContainerName: 'tfstate'
+        backendAzureRmContainerName: 'tstate-vm'
         backendAzureRmKey: 'terraform.state'
     
     - task: TerraformTaskV1@0
@@ -107,7 +107,7 @@ stages:
         backendServiceArm: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
         backendAzureRmStorageAccountName: 'terraformstatefab056'
-        backendAzureRmContainerName: 'tfstate'
+        backendAzureRmContainerName: 'tstate-vm'
         backendAzureRmKey: 'terraform.state'
 
     - task: TerraformTaskV1@0
