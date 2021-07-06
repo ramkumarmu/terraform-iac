@@ -122,6 +122,6 @@ stages:
     - task: PublishBuildArtifacts@1
       displayName: Upload private key
       inputs:
-        PathtoPublish: '$(System.DefaultWorkingDirectory)/02_vm_linux/*.pk'
-        ArtifactName: 'pk.pem'
+        PathtoPublish: '**/*.pem'
+        ArtifactName: 'private-key'
         publishLocation: 'Container'
