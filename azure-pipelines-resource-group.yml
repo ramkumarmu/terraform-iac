@@ -24,9 +24,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/01_terraform_resourcegroup'
-        backendServiceArm: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
+        backendServiceArm: 'Azure Pass - Sponsorship(26b6cb67-884b-4493-8f15-2f670837b651)'
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
-        backendAzureRmStorageAccountName: 'terraformstatefab056'
+        backendAzureRmStorageAccountName: 'terraformstatefab057'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'terraform.tfstate'
 
@@ -37,7 +37,7 @@ stages:
         command: 'plan'
         workingDirectory: '$(System.DefaultWorkingDirectory)/01_terraform_resourcegroup'
         commandOptions: '-out tfplan'
-        environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
+        environmentServiceNameAzureRM: 'Azure Pass - Sponsorship(26b6cb67-884b-4493-8f15-2f670837b651)'
 
     - script: |
           cd $(System.DefaultWorkingDirectory)/01_terraform_resourcegroup
