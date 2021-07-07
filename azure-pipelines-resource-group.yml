@@ -104,7 +104,7 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/01_terraform_resourcegroup'
-        backendServiceArm: 'Azure Pass - Sponsorship(a41112e8-e219-4b72-b0fa-b86a6ea338e5)'
+        backendServiceArm: 'Azure Pass - Sponsorship(26b6cb67-884b-4493-8f15-2f670837b651)'
         backendAzureRmResourceGroupName: 'terraform-state-fab-rg'
         backendAzureRmStorageAccountName: 'terraformstatefab056'
         backendAzureRmContainerName: 'tfstate'
